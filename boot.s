@@ -15,3 +15,4 @@ kernel_entry:
     mov sp, #0x80000 // move the stack pointer to this address as this is the addres from where Rpi expects the kernel code to be loaded in main memory 
     bl KMain // branches to KMain (short for kernel main) function but with link.... i.e it update the the LR(link register) with address of the next instruction (i.e. address f instruction "b end")
     b end
+    
