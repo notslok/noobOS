@@ -2,7 +2,7 @@
 
 # 1) Generating object file of the boot asm and main.c
 aarch64-linux-gnu-gcc -c boot.s -o boot.o
-aarch64-linux-gnu-gcc -c ib.s -o liba.o
+aarch64-linux-gnu-gcc -c lib.s -o liba.o
 aarch64-linux-gnu-gcc -std=c99 -ffreestanding -mgeneral-regs-only -c main.c
 aarch64-linux-gnu-gcc -std=c99 -ffreestanding -mgeneral-regs-only -c uart.c
 
