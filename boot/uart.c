@@ -13,7 +13,7 @@ unsigned char read_char(void)
     return in_word(UART0_DR);
 }
 
-void write_string(const char* string)
+void write_string(unsigned char* string)
 {
     for(int i=0; string[i] != '\0'; i++)
     {
